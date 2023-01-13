@@ -97,6 +97,7 @@ h1 span {
     flex-direction: column;
     height:720px;
     align-items: center;
+    background-color: rgb(240, 240, 240);
 }
 #img-pata{
     width: 50%;
