@@ -1,0 +1,153 @@
+*{
+    box-sizing: border-box;
+}
+body {
+    margin: 0;
+    font-family: sans-serif;
+}
+h1 {font-size: 4.5em; text-shadow: 1px 1px 10px black; }
+p{font-size: 1em;}
+header {background-color: rgba(31, 29, 30,1);
+}
+header .contenedor {
+    display: flex;
+    flex-direction:row;
+    align-items:center;
+    justify-content: space-between;
+    padding: 10px;
+}
+#icon__menu{
+    color: white;
+    cursor: pointer;
+    font-size: 25px;
+}
+header a{
+    padding: 2px 12px;
+    text-decoration: none;
+    color: rgb(245, 245, 245);
+    text-shadow: 1px 2px 10px black;
+}
+
+header img {
+    height: 40px;
+    position: relative;
+    /* top: 1em; */
+    justify-content: center;
+    padding-left: 42%;
+}
+.menu{
+    height: 0px;
+    width: 0px;
+    position: absolute;
+    right: 0px;
+    top: 59px;
+    background-color: rgba(24, 23, 23, 0.767);
+    overflow: hidden;
+    z-index: 10;
+    transition: all 200ms;
+    
+    
+    
+}
+.mostrar_menu {
+    width: 100%;
+    height: 11%;
+    
+}
+header nav {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    text-align:end;
+    padding-top: 10px;
+    transition: all 300ms;    
+} 
+header nav span{
+    color:rgb(216, 53, 47);
+}
+
+#hero {
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align:center;
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.6)
+    )
+    ,url(/media/Fotos/MP\ Producto\ 35mm\ Productora-1.jpg);
+    background-size: cover;
+    background-position: center center ;
+}
+#hero h1{
+    color: white;
+    margin: 0;
+    font-family: patua one, sans-serif;  
+}
+h1 span {
+    color:rgb(216, 53, 47);
+       
+}
+#productos .contenedor{
+    display: flex;
+    flex-direction: column;
+    height:720px;
+    align-items: center;
+}
+#img-pata{
+    width: 50%;
+}
+#quienes-somos .contenedor{
+    background-color: gray;
+}
+.carta{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    
+}
+
+
+@media (min-width: 720px){
+    #icon__menu {
+        display: none;
+    }
+    header img{
+        padding-left: 0%;
+    }
+    .menu{
+        overflow: visible;
+        display:flex;
+        right: 5px;
+        top: auto;
+        width: 400px;
+        background-color:rgba(0,0,0,0);
+        z-index: 10;
+        /* padding-right: 10px; */
+        margin-right: -50px;
+    }
+    header nav {
+        display: flex;
+        flex-direction: row;
+        align-items: flex-end;
+        text-align: left;
+        padding-top: 10px;
+        transition: all 300ms;
+        
+    }
+    header{
+        position: fixed;
+        width: 100%;
+    } 
+    header .contenedor{
+        display: flex;
+        max-width: 1400px;
+        margin: 0px 126px 0px 20px;
+    }
+    
+    
+}
