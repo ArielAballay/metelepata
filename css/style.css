@@ -5,9 +5,23 @@ body {
     margin: 0;
     font-family: sans-serif;
 }
+*, html, body {
+    scroll-behavior: smooth !important;
+}
 h1 {font-size: 4.5em; text-shadow: 1px 1px 10px black; }
-p{font-size: 1em;}
-header {background-color: rgba(31, 29, 30,1);
+h2 {
+    font-family: 'beardbone personal use';
+    font-size: 2.5em;
+    font-weight: 300;
+}
+p, li{font-size: 1.2em;}
+
+header {
+    /* background-color: rgba(31, 29, 30,1); */
+    background-color: white;
+    z-index: 30;
+    /* position: fixed;
+    width: 100%; */
 }
 header .contenedor {
     display: flex;
@@ -17,7 +31,7 @@ header .contenedor {
     padding: 10px;
 }
 #icon__menu{
-    color: white;
+    color: black;
     cursor: pointer;
     font-size: 25px;
 }
@@ -26,24 +40,28 @@ header a{
     text-decoration: none;
     color: rgb(245, 245, 245);
     text-shadow: 1px 2px 10px black;
+    font-family: 'beardbone personal use';
+    font-weight: normal;
+    font-size: 25px;
+    font-variant: small-caps;
 }
 
 header img {
-    height: 40px;
+    height: 1.5em;
     position: relative;
     /* top: 1em; */
-    justify-content: center;
-    padding-left: 42%;
+    /* justify-content: center;
+    padding-left: 42%; */
 }
 .menu{
     height: 0px;
     width: 0px;
     position: absolute;
     right: 0px;
-    top: 59px;
-    background-color: rgba(24, 23, 23, 0.767);
+    top: 45px;
+    background-color: rgba(24, 23, 23, 0.5);
     overflow: hidden;
-    z-index: 10;
+    z-index: 20;
     transition: all 200ms;
     
     
@@ -51,7 +69,7 @@ header img {
 }
 .mostrar_menu {
     width: 100%;
-    height: 90px;
+    height: 6.3rem;
     
 }
 header nav {
@@ -60,10 +78,8 @@ header nav {
     align-items: flex-end;
     text-align:end;
     padding-top: 10px;
-    transition: all 300ms;    
-} 
-header nav span{
-    color:rgb(216, 53, 47);
+    transition: all 300ms; 
+     
 }
 
 #hero {
@@ -81,43 +97,111 @@ header nav span{
     )
     ,url(https://files.fm/thumb_show.php?i=vqpmkm27r);
     background-size: cover;
-    background-position: center center ;
+    background-position: center center;
 }
 #hero h1{
     color: white;
     margin: 0;
-    font-family: patua one, sans-serif;  
+    font-family: patua one, sans-serif;
+     
+}
+#hero img {
+    width: 75%;
+    opacity: 0.9;
+    z-index: 10;
+
 }
 h1 span {
     color:rgb(216, 53, 47);
        
 }
 #productos .contenedor{
+    margin: 10px;
+    padding: 25px 10px;
     display: flex;
     flex-direction: column;
-    height:720px;
+    height:100%;
     align-items: center;
     background-color: rgb(240, 240, 240);
 }
 #img-pata{
-    width: 50%;
+    width: 100%;
+    border-radius: 0px 20px 0px 20px;
+    border: 3px double black;
 }
-#quienes-somos .contenedor{
-    background-color: gray;
-}
+
 .carta{
     display: flex;
     flex-direction: column;
     text-align: center;
     
 }
+.productos__carta{
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    text-align: left;
+}
 #icon_shop{
-    font-size: 20px;    
+    border-radius: 5px;
+    padding: 10px;
+    margin: auto;
+    font-size: 20px;  
+    border: 2px solid black;
+    box-shadow: 4px 4px 10px gray;
+    background-color: rgb(248, 248, 255);
 }
 #icon_shop a{
-    font-family: sans-serif;
+    font-size: 1.7em;
+    font-family: 'beardbone personal use', sans-serif;
+    font-weight: 300;
     text-decoration: none;
     color: rgb(216, 53, 47);
+}
+h2 span {
+    color: rgb(216, 53, 47);
+}
+footer{
+    padding: 10px;
+    background-color: rgba(24, 23, 23, 1);
+    height: 100%;
+}
+footer img{
+    height: 50px;
+}
+footer a{
+    
+}
+footer p{
+    font-size: 15px;
+    margin: 0;
+    color: white;
+}
+/* footer .contenedor{
+    display: flex;
+
+} */
+#whatsapp-logo{
+    position: fixed;
+    bottom: 30px;
+    width: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 101;
+    cursor: pointer;
+    right: 15px;
+}
+#whatsapp-logo img{
+    height: 50px;
+}
+.carta-productos{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(235, 245, 255);
+    height: 82vh;
 }
 
 
@@ -126,18 +210,26 @@ h1 span {
         display: none;
     }
     header img{
-        padding-left: 0%;
+        padding-left: 0;
     }
     .menu{
         overflow: visible;
         display:flex;
-        right: 5px;
+        right: 7%;
         top: auto;
         width: 400px;
         background-color:rgba(0,0,0,0);
         z-index: 10;
         /* padding-right: 10px; */
         margin-right: -50px;
+
+    }
+    .mostrar_menu {
+       width: auto;
+       height: auto;
+       padding-right: 7%;
+       padding-bottom: 1%;
+        
     }
     header nav {
         display: flex;
@@ -155,7 +247,11 @@ h1 span {
     header .contenedor{
         display: flex;
         max-width: 1400px;
-        margin: 0px 126px 0px 20px;
+        margin: 0px 0px 0px 20px;
+    }
+    #hero img{
+        width: auto;
+        height: 60%;
     }
     
     

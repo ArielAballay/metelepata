@@ -6,45 +6,58 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
     <style> @import url('https://fonts.googleapis.com/css2?family=Patua+One&family=Roboto:wght@700&display=swap'); </style>
+    <style>@import url('https://fonts.cdnfonts.com/css/beardbone-personal-use');</style>                
     <script src="https://kit.fontawesome.com/8614608c11.js" crossorigin="anonymous"></script>
     <title>Metele pata</title>
 </head>
 <body>
     <header>
         <div class="contenedor">
-            <img src="media/Log-ico/Logo con borde blanco .png" alt="">
+            <img src="media/Log-ico/letra.png" alt="">
             <div class="menu">
                 <nav>
-                    <a href="#">Prod<span>uctos</span></a>
-                    <a href="#">Quienes <span>Somos</span></a>
-                    <a href="#">Cont<span>acto</span></a>
+                    <a href="#productos">Productos</a>
+                    <a href="#">Quienes Somos</a>
+                    <a href="#footer">Contacto</a>
                 </nav>
             </div>
             <i class="fa-solid fa-bars" id="icon__menu"></i>
         </div>
     </header>
     <section id="hero">
-        <h1>METELE <span>PATA</span></h1>
+        <img src="/media/Log-ico/Logo con borde blanco .png" alt="">
+        <!-- <h1>METELE <span>PATA</span></h1> -->
     </section>
     <section id="productos">
         <div class="contenedor">
-            <h2>NUESTROS PRODUCTOS</h2>
+            <h2>NUESTROS <span>PRODUCTOS</span></h2>
             <div class="carta">
-                <div class="productos__carta">
+                <div class="productos__carta_img">
                     <img src="img/img1.jpg" alt="" id="img-pata">
                 </div>
-                <div>                
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. A, delectus? Unde voluptatem magnam a consectetur, id ipsa. Dolorem officiis non, quis consequatur repellat ut neque reprehenderit nesciunt recusandae et dignissimos.                
+                <div class="productos__carta">                
+                    <p>
+                        Tenemos opciones para todo tipo de eventos. <br>
                     </p>
-                    
-                    <i class="fa-solid fa-cart-shopping" id="icon_shop"> <a href="https://arielaballay.github.io/metelepata/" target="_blank"><span>COMPRAR</span></a></i>
-                    
+                    <ul>
+                        <li>Pata de cerdo</li>
+                        <li>Pata de ternera</li>
+                        <li>Bondiola braseada</li>
+                        <li>Picadas</li>
+                        <li>Opcion para celiácos</li>
+                    </ul>
+                    <p>
+                        Podes elegir nuestras promociones o armarlo a tu preferencia.
+
+                    </p>                  
                 </div>
+                <i class="fa-solid fa-cart-shopping" id="icon_shop"> <a href="productos.html"
+                    ><span>HACE TU PEDIDO</span></a></i>
             </div>
             
         </div>
     </section>
-    <section id="quienes-somos">
+    <!-- <section id="quienes-somos">
         <div class="contenedor">
             <div class="contenedor__texto">
                 <h2>Somos Metele Pata!</h2>
@@ -54,18 +67,23 @@
                 <img src="" alt="">
             </div>
         </div>
-    </section>
+    </section> -->
     <footer id="footer">
         <div class="contenedor">
-            <a href="">
-               <img src="" alt="Whatsapp"> <span>Whatsapp</span>
+            <a href="https://www.facebook.com/pages/category/restaurant/metele_patapatas_flambeadas-109364917994075/" target="_blank">
+               <img src="media/Log-ico/facebook.png" alt="facebook">
             </a>
-            <a href="">
-               <img src="" alt="Instagram"><span>Instagram</span>
+            <a href="https://www.instagram.com/metelepata.ok/" target="_blank">
+               <img src="media/Log-ico/instagram.png" alt="Instagram">
             </a>
-            <p>&copy; MetelePata todos los derechos reservados.</p>
         </div>
+            <p>&copy; MetelePata todos los derechos reservados.</p>
     </footer>
+    <div id="whatsapp-logo">
+        <a href="https://api.whatsapp.com/send/?phone=5493517601590" target="_blank">
+            <img src="media/Log-ico/WhatsApp-logo.png" alt="whatsapp-logo">
+        </a>
+    </div>
     <script src="js/script.js"></script>
 </body>
 </html>
