@@ -253,16 +253,16 @@ footer p{
 }
 .pedido{
     margin-top: 5px !important;
-    background-color:black;
+    background-color: white;
     padding-bottom: 10px;
 }
 .pedido i{
-    color: rgb(216, 53, 47);
+    color: black;
     font-size: 25px;
 }
 .pedido span{
-    padding-left: 15px;
-    font-size: 45px;
+    font-size: 35px;
+    color: rgb(216, 53, 47);
 }
 
 @media (min-width: 720px){
