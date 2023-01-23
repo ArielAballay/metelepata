@@ -95,7 +95,7 @@ header nav {
         rgba(0,0,0,0.5),
         rgba(0,0,0,0.6)
     )
-    ,url(https://files.fm/thumb_show.php?i=vqpmkm27r);
+    ,url(../media/hero.jpg);
     background-size: cover;
     background-position: center center;
 }
@@ -229,7 +229,7 @@ footer p{
     background-image: linear-gradient(
         0deg,
         rgba(0,0,0,0.5),
-        rgba(0,0,0,0.0)), url(/media/Fotos/MP\ Producto\ 35mm\ Productora-1.jpg);
+        rgba(0,0,0,0.0)), url(../media/Fotos/Productora-1.jpg);
     background-size: cover;
     background-position-y: center;
 }
@@ -238,7 +238,7 @@ footer p{
     background-image: linear-gradient(
         0deg,
         rgba(0,0,0,0.5),
-        rgba(0,0,0,0.0)), url(/img/img4.jpg);
+        rgba(0,0,0,0.0)), url(../img/img4.jpg);
     background-size: cover;
     background-position-y: center;
 }
@@ -247,7 +247,7 @@ footer p{
     background-image: linear-gradient(
         0deg,
         rgba(0,0,0,0.5),
-        rgba(0,0,0,0.0)), url(/img/img5.jpg);
+        rgba(0,0,0,0.0)), url(../img/img5.jpg);
     background-size: cover;
     background-position-y: center;
 }
