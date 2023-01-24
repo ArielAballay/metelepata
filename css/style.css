@@ -175,6 +175,9 @@ footer p{
     margin: 0;
     color: white;
 }
+footer a{
+    text-decoration: none;
+}
 #whatsapp-logo{
     position: fixed;
     bottom: 30px;
@@ -252,9 +255,9 @@ footer p{
     background-position-y: center;
 }
 .pedido{
-    margin-top: 5px !important;
     background-color: white;
     padding-bottom: 10px;
+;
 }
 .pedido i{
     color: black;
@@ -265,6 +268,26 @@ footer p{
     color: rgb(216, 53, 47);
 }
 
+/* pata de cerdo htm */
+#compra-cerdo .contenedor{
+    background-color: rgb(245, 245, 245);
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    margin: 20px;
+    align-items: center;
+}
+#compra-cerdo .contenedor h2{
+    text-align: center;
+}
+#compra-cerdo .contenedor p{
+    font-size: 1em;
+}
+#compra-cerdo .contenedor i{
+    font-size: 1em;
+    margin: 25px;
+    max-width:max-content;
+}
 @media (min-width: 720px){
     #icon__menu {
         display: none;
@@ -281,9 +304,10 @@ footer p{
         background-color:rgba(0,0,0,0);
         z-index: 10;
         /* padding-right: 10px; */
-        margin-right: -50px;
+    
 
     }
+    /* Aca toco mostrar menu para que no se rompa en caso de que cambie a escritorio con "mostrar menu" abierto */
     .mostrar_menu {
        width: auto;
        height: auto;
@@ -301,7 +325,6 @@ footer p{
         
     }
     header{
-        position: fixed;
         width: 100%;
     } 
     header .contenedor{
