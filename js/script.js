@@ -7,7 +7,7 @@ function mostrar_menu(){
 }
 
 // slideshow seccion productos
-window.addEventListener('load',function(){
+addEventListener('load',function(){
     
     var imagenes = [];
     imagenes[0] = 'img/img1.jpg';
