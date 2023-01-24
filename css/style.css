@@ -348,6 +348,7 @@ footer a{
     }
     #productos .carta{
         flex-direction: row;
+        max-height: 900px;
     }
     .productos__carta{
         width: 50%;
@@ -363,6 +364,7 @@ footer a{
         margin: 0px 30px 0px 50px;
     }
     #img-pata{
+        object-fit: cover;
         height: 100%;
     }
     #icon_shop{
