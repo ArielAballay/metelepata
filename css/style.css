@@ -22,8 +22,7 @@ header {
     /* background-color: rgba(31, 29, 30,1); */
     background-color: white;
     z-index: 30;
-    /* position: fixed;
-    width: 100%; */
+    /* position: fixed;*/
 }
 header .contenedor {
     display: flex;
@@ -31,6 +30,7 @@ header .contenedor {
     align-items:center;
     justify-content: space-between;
     padding: 10px;
+    
 }
 #icon__menu{
     color: black;
@@ -336,11 +336,13 @@ footer a{
         display: flex;
         max-width: 1400px;
         margin: 0px 0px 0px 20px;
+        height: 60px;
 
     }
     header nav a{
         color: black;
         text-shadow: 1px 1px 5px gray;
+        font-size: 2em;
     }
     #hero img{
         width: auto;
